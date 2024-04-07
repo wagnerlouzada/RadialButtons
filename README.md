@@ -1,12 +1,12 @@
-Este projeto é o inicio da construção de um componente de botoeira com botões radiais.
+This project is the beginning of the construction of a button panel component with radial buttons.
 
-A proposta é permitir que os botões possam ser dispostos ao redor de um ponto de ancoragem.
+The proposal is to allow buttons to be arranged around an anchor point.
 
-A disposição dos botões podera ser configurada, de forma a permitir que sejam apresentados ao redor do ponto de ancoragem.
+The arrangement of the buttons can be configured to allow them to be displayed around the anchor point.
 
-Também deve permitir que serjam apresentados em uma faixa de angulos.
+It must also allow them to be presented in a range of angles.
 
-o numero de botões tamém pode ser configurado, bem como a orientação das imagens internas (icones).
+the number of buttons can also be configured, as well as the orientation of the internal images (icons).
 
 
 ![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/08e146bc-6d77-4370-b246-c2fc8fb90c43) ![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/383fc70b-f04c-47f8-8cd0-ce7df4316371)
