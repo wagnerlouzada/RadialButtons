@@ -9,5 +9,10 @@ Também deve permitir que serjam apresentados em uma faixa de angulos.
 o numero de botões tamém pode ser configurado, bem como a orientação das imagens internas (icones).
 
 
-![radial_btn](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/4fa2849f-560b-402e-b0c3-4c7c469b89a4) ![radial_btn](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/e8cded0f-fc7c-4920-a7e3-09f148590dc0)
+![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/08e146bc-6d77-4370-b246-c2fc8fb90c43) 
 
+![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/383fc70b-f04c-47f8-8cd0-ce7df4316371)
+
+![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/5a967b98-ffbe-4da9-907a-745ae90e023f) 
+
+![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/07f4fa6e-7c1a-4658-8bd2-0c94c7255926)
