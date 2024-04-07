@@ -13,6 +13,6 @@ o numero de botões tamém pode ser configurado, bem como a orientação das ima
 
 ![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/5a967b98-ffbe-4da9-907a-745ae90e023f) ![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/07f4fa6e-7c1a-4658-8bd2-0c94c7255926)
 
-![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/566d20e6-0020-4537-a90e-ae403290ff87) ![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/3e9dda5c-f09f-458d-9415-62ecc9509b2a)
+![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/3e9dda5c-f09f-458d-9415-62ecc9509b2a) ![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/566d20e6-0020-4537-a90e-ae403290ff87)
 
 ![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/760b690e-e2c7-443d-812c-4683df74991f) ![Sem título](https://github.com/wagnerlouzada/RadialButtons/assets/2131389/872ad9f7-7383-4414-96a3-03401ffd1acd)
