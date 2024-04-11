@@ -1,80 +1,170 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  user-select: none;
-  overflow: hidden;
+    user-select: none;
+    overflow: hidden;
 }
 
 body {
-  background-color: #aa1212;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  padding: 0;
-  margin: 0;
+    background-color: #aa1212;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .anchor {
-  position: fixed;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  z-index: 1000;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: fixed;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30%; /* usar 50% para botão redondo */
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.anchorMonitor {
+    display: none; /* para usar apenas em dev */
+    top: 50%;
+    right: 50%;
+    width: fit-content;
+    height: auto;
+    font-size: xx-small;
+    align-items: center;
+    text-align: center;
 }
 
 .anchor i {
-  font-size: 1.5rem;
-  color: #333;
+    font-size: 1.5rem;
+    color: #333;
+    pointer-events: none
+}
+
+.anchor img {
+    width: 20px;
+    color: #333;
+    pointer-events: none
 }
 
 .wheel {
-  position: fixed;
-  /*top: 50%;*/
-  /*left: 0;*/
-  transform: translateY(-50%);
-
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  z-index: 999;
-  display: none;
+    position: fixed;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    z-index: 999;
+    pointer-events: none;
+    display: none;
 }
 
-.wheel.on {
-  display: block;
+    .wheel.on {
+        display: block;
+    }
+
+.subMenu {
+    position: fixed;
+    background-color: rgba(45, 45, 45, 0.8);
+    border-radius: 3px;
+    height: fit-content !important;
+    width: fit-content !important;
+    max-height: auto;
+    max-width: auto;
+    min-height: 140px;
+    min-width: 100px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 15px;
+    opacity: 1;
+    top: 200px;
+    left: 50px;
+    z-index: 999;
+    pointer-events: all;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    overflow-x: hidden;
+    line-height: 25px;
+    display: none;
+    z-index: 9999999999;
 }
+    .subMenu ul {
+        list-style-type: none;
+        margin-left:-30px;
+        margin-top:10px;
+    }
+
+    .subMenu li {
+        align-items: self-start;
+        vertical-align: middle;
+        line-height: 25px;
+        padding: 0;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+
+    .subMenu span {
+        font-size: 25px;
+        color: white;
+        line-height: 25px;
+        margin: 0;
+        padding: 0px;
+        vertical-align: middle;
+    }
+
+    .subMenuBtn {
+        position:relative;
+        color:white;
+        display:flex;
+        float:right;
+        top:-5px;
+        left:5px;
+        margin-right:0;
+        margin-top:0;
+        width: 18px;
+        height:18px;
+        border: 0px dashed gray;
+        
+    }
+
+    .subMenu.on {
+        display: block;
+    }
 
 .arc {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    pointer-events:all !important;
 }
 
-.arc:hover {
-  transform: scale(1.1) translate(-50%, -50%);
-}
+    .arc:hover {
+        transform: scale(1.2) translate(-50%, -50%);
+        background-color: #ff7575;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        z-index:99999999999
+        /*opacity:0.8;*/
+    }
 
-.arc i {
-  font-size: 2rem;
-  color: #333;
-}
+    .arc i {
+        font-size: 2rem;
+        color: #333;
+    }
