@@ -10,12 +10,81 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-  <div id="anchor" class="anchor">
-    <i class="fas fa-bars"></i>
-  </div>
-  <div class="wheel" id="wheel"></div>
-  <script src="./script.js"></script>
-</body>
+<div id="anchor"
+     class="anchor"
+     style="z-index:999999;">
+  
+     <i class="fas fa-bars"
+       style="display:none;"></i>
+
+     <div id="anchorMonitor"
+         class="anchorMonitor">
+    </div>
+</div>
+
+<script src="./btnscript.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+         //
+         // exemplo de items de menu
+         //
+         items:
+         [
+            {
+                link: '/home',
+                img: 'fa fa-home'
+            },
+            {
+                link: '/about',
+                img: 'fa fa-info'
+            },
+            {
+                link: '/contact',
+                img: 'fa fa-camera-retro'
+            },
+            {
+                link: '/contact',
+                img: 'fa fa-address-book'
+            },
+            {
+                link: '/contact',
+                img: 'fa fa-eye'
+            },
+            {
+                link: '/contact',
+                img: '/mindColors.svg'
+            },
+            {
+                link: '/apps',
+                img: '/apps.svg'
+            },
+            {
+                link: '/services',
+                img: 'fa fa-heart'
+            }
+         ]
+        
+
+        const options = {
+            anchorId: 'anchor', // ID do elemento de âncora
+            items: items, // Lista de links
+            animate: true,
+            smartMode: true, // para usar mode mais inteligente de montagem
+            wheelSize: 90, // Tamanho do menu radial
+            iconSize: 25, // Tamanho dos ícones
+            buttonWidth: 50, // Largura dos botões
+            buttonHeight: 50, // Altura dos botões
+            degrees: 170, // Número de graus para o posicionamento dos botões
+            initialAngle: 5, // Ângulo inicial ou deslocamento em graus
+            iconRotate: false, // Opção de rotação do ícone
+            radius: 90 // Raio do círculo
+        };
+
+        createRadialMenu(options);
+    });
+
+</script>
 
 </html>
