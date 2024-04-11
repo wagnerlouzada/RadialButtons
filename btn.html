@@ -11,19 +11,21 @@
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<div id="anchor"
-     class="anchor"
-     style="z-index:999999;">
-  
-     <i class="fas fa-bars"
-       style="display:none;"></i>
+<div id="main" style="width:100%; height:100%;">
+	<div id="anchor"
+		 class="anchor"
+		 style="z-index:999999;">
+	  
+		 <i class="fas fa-bars"
+		   style="display:block;"></i>
 
-     <div id="anchorMonitor"
-         class="anchorMonitor">
-    </div>
-</div>
+		 <div id="anchorMonitor"
+			 class="anchorMonitor">
+		</div>
+	</div>
+<div>
 
-<script src="./btn.js"></script>
+<script src="btn.js"></script>
 
 <script>
     $(document).ready(function () {
@@ -35,37 +37,87 @@
          [
             {
                 link: '/home',
-                img: 'fa fa-home'
+                img: 'fa fa-home',
+				caption: 'item um'
             },
             {
                 link: '/about',
-                img: 'fa fa-info'
+                img: 'fa fa-info',
+				caption: 'item 789'
             },
             {
                 link: '/contact',
-                img: 'fa fa-camera-retro'
+                img: 'fa fa-camera-retro',
+				caption: 'item 456'
             },
             {
                 link: '/contact',
-                img: 'fa fa-address-book'
+                img: 'fa fa-address-book',
+				caption: 'item 123'
             },
             {
                 link: '/contact',
-                img: 'fa fa-eye'
+                img: 'fa fa-eye',
+				caption: 'item abc'
             },
             {
-                link: '/contact',
-                img: '/mindColors.svg'
+                link: 'javascript:;',
+                img: 'fa fa-bars',
+				caption: 'item xxx',
+				subitems:  [
+							{
+								link: '/home',
+								img: 'fa fa-home',
+								caption: 'item 0'
+							},
+							{
+								link: '/about',
+								img: 'fa fa-info',
+								caption: 'item 8'
+							},
+							{
+								link: '/contact',
+								img: 'fa fa-camera-retro',
+								caption: 'item 7'
+							},
+							{
+								link: '/contact',
+								img: 'fa fa-address-book',
+								caption: 'item 6'
+							},
+							{
+								link: '/contact',
+								img: 'fa fa-eye',
+								caption: 'item 5'
+							},
+							{
+								link: '/contact',
+								img: 'fa fa-eye',
+								caption: 'item 4'
+							},
+							{
+								link: '/apps',
+								img: 'fa fa-eye',
+								caption: 'item 3'
+							},
+							{
+								link: '/services',
+								img: 'fa fa-heart',
+								caption: 'item 2'
+							}
+						]
             },
             {
                 link: '/apps',
-                img: '/apps.svg'
+                img: 'fa fa-eye',
+				caption: 'item 10'
             },
             {
                 link: '/services',
-                img: 'fa fa-heart'
+                img: 'fa fa-heart',
+				caption: 'item 11'
             }
-         ]
+         ];
         
 
         const options = {
