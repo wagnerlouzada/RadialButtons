@@ -78,9 +78,9 @@ function createRadialMenu(options) {
     var needSavePosition = false;
 
     if (smartMode) {
-        var initialPosition = restoreButtonPosition();
-        anchor.style.left = `${initialPosition.left}px`;
-        anchor.style.top = `${initialPosition.top}px`;
+        //var initialPosition = restoreButtonPosition();
+        //anchor.style.left = `${initialPosition.left}px`;
+        //anchor.style.top = `${initialPosition.top}px`;
     }
 
     let addx = (buttonWidth / 2) + 0;
@@ -996,6 +996,8 @@ function createRadialMenu(options) {
 
     // Recuperar a posição do botão
     function restoreButtonPosition() {
+		// não esta funcionando...
+		
         try {
             var posicaoJSON = localStorage.getItem('DynButtonPosition');
             if (posicaoJSON) {
